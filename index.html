@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #101020;
-            color: rgb(89, 207, 168)
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .buttons{
-            display: flex;
-            gap: 8px;
-        }
-        button{
-            padding: 8px;
-            background-color: #101020;
-            color: rgb(89, 207, 168);
-            border: 1px solid rgb(89, 207, 168);
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: rgb(89, 207, 168);
-            color: #101020;
-        }
-        .guess{
-            font-size: 1.2em;
-            font-family: monospace;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #101020;
+        color: rgb(89, 207, 168);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .buttons {
+        display: flex;
+        gap: 8px;
+      }
+      button {
+        padding: 8px;
+        background-color: #101020;
+        color: rgb(89, 207, 168);
+        border: 1px solid rgb(89, 207, 168);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(89, 207, 168);
+        color: #101020;
+      }
+      .guess {
+        font-size: 1.2em;
+        font-family: monospace;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Number guesser</h1>
-    <hr>
+    <hr />
     <h4>Think of a number between 1 and 100</h4>
-    <hr>
+    <hr />
     <h4 class="guess">Guesses</h4>
     <ol class="container">
-        <div id="guesses" class="container">
-
-        </div>
-        <li class="guess">Current guess: <span id="current-guess"></span></li>
+      <div id="guesses" class="container"></div>
+      <li class="guess">Current guess: <span id="current-guess"></span></li>
     </ol>
     <div class="buttons">
-        <button id="lower">Lower</button>
-        <button id="higher">Higher</button>
-        <button id="correct">Correct</button>
+      <button id="lower">Lower</button>
+      <button id="higher">Higher</button>
+      <button id="correct">Correct</button>
+      <button id="restart" style="display: none">Restart</button>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
